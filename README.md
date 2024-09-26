@@ -57,7 +57,7 @@ join system.build_triggers bt on b.trigger_id = bt.trigger_id
 order by bt.triggered_at desc;
 ```
 
-```csv
+```tsv
 TRIGGERED_AT	TRIGGER_TYPE	TRIGGERED_BY	SELECTOR_STMT	STATUS
 2024-09-26 13:00:02.952	SCHEDULED_BUILD	schedules.jaffle_shop.hourly_orders_refresh	model.jaffle_shop.orders+	SUCCESS
 2024-09-26 12:00:01.594	SCHEDULED_BUILD	schedules.jaffle_shop.hourly_orders_refresh	model.jaffle_shop.orders+	SUCCESS
