@@ -21,12 +21,12 @@ To get up and running with this project:
 2. Install the Balto Snowflake Native app.
 
 3. Once it's installed, initiate the installation of the Balto Github integration:
-```
+```sql
 call balto.config.setup_github();
 ```
 
 4. Create a new database/schema and grant it to the Balto app:
-```
+```sql
 create database jaffle
 create schema jaffle.test
 grant all on database jaffle to application balto;
@@ -34,7 +34,7 @@ grant all on schema jaffle.test to application balto;
 ```
 
 5. Add a new resource, commit it, and merge to `main`:
-``` title="models/schedules.yml"
+```yaml title="models/schedules.yml"
 version: 2
 
 schedules:
@@ -45,7 +45,7 @@ schedules:
 
 6. Confirm that your change was deployed and that the new schedule is running:
 
-```
+```sql
 select
     bt.triggered_at,
     bt.trigger_type,
@@ -55,7 +55,9 @@ select
 from system.builds b
 join system.build_triggers bt on b.trigger_id = bt.trigger_id
 order by bt.triggered_at desc;
----
+```
+
+```csv
 TRIGGERED_AT	TRIGGER_TYPE	TRIGGERED_BY	SELECTOR_STMT	STATUS
 2024-09-26 13:00:02.952	SCHEDULED_BUILD	schedules.jaffle_shop.hourly_orders_refresh	model.jaffle_shop.orders+	SUCCESS
 2024-09-26 12:00:01.594	SCHEDULED_BUILD	schedules.jaffle_shop.hourly_orders_refresh	model.jaffle_shop.orders+	SUCCESS
