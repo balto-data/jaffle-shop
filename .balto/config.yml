@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    project_directory: test_project
+    project_directory: .
     environment:
       database: jaffle
       schema: test
