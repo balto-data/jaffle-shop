@@ -1,0 +1,6 @@
+models:
+  - name: large_payment
+    description: Trigger for tracking large payments
+    config:
+        materialized: trigger
+        handler: metric_handler

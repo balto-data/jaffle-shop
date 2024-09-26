@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  deploy:
+    project_directory: test_project
+    environment:
+      database: jaffle
+      schema: test
