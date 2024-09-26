@@ -16,9 +16,9 @@ The raw data consists of customers, orders, and payments, with the following ent
 
 ### Running this project
 To get up and running with this project:
-1. Clone this repo
+1. Create a new repo from this template
 
-2. Install the Balto Snowflake Native app.
+2. [Install](https://baltodatatool.com/getting_started/) the Balto Snowflake Native app.
 
 3. Once it's installed, initiate the installation of the Balto Github integration:
 ```sql
