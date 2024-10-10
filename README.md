@@ -4,7 +4,7 @@
 
 ### What is this repo?
 What this repo _is_:
-- A self-contained example Balto project, useful for testing out scripts, and communicating some of the core Balto concepts.
+- A self-contained example [Balto](https://github.com/balto-data/balto) project, useful for testing out scripts, and communicating some of the core Balto concepts.
 
 ### What's in this repo?
 This repo contains some (fake) raw data from a fictional app.
