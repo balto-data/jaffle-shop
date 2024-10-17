@@ -6,8 +6,3 @@ select
     object_construct('payment_method', payment_method) as metric_tags
 from {{ ref('stg_payments') }}
 where amount > 1000
--- debugging
--- debugging
--- debugging
--- debugging
--- debugging

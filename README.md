@@ -4,7 +4,7 @@
 
 ### What is this repo?
 What this repo _is_:
-- A self-contained example Balto project, useful for testing out scripts, and communicating some of the core Balto concepts.
+- A self-contained example [Balto](https://github.com/balto-data/balto) project, useful for testing out scripts, and communicating some of the core Balto concepts.
 
 ### What's in this repo?
 This repo contains some (fake) raw data from a fictional app.
@@ -16,9 +16,9 @@ The raw data consists of customers, orders, and payments, with the following ent
 
 ### Running this project
 To get up and running with this project:
-1. Clone this repo
+1. Create a new repo from this template
 
-2. Install the Balto Snowflake Native app.
+2. [Install](https://baltodatatool.com/getting_started/) the Balto Snowflake Native app.
 
 3. Once it's installed, initiate the installation of the Balto Github integration:
 ```sql
@@ -57,7 +57,7 @@ join system.build_triggers bt on b.trigger_id = bt.trigger_id
 order by bt.triggered_at desc;
 ```
 
-```csv
+```tsv
 TRIGGERED_AT	TRIGGER_TYPE	TRIGGERED_BY	SELECTOR_STMT	STATUS
 2024-09-26 13:00:02.952	SCHEDULED_BUILD	schedules.jaffle_shop.hourly_orders_refresh	model.jaffle_shop.orders+	SUCCESS
 2024-09-26 12:00:01.594	SCHEDULED_BUILD	schedules.jaffle_shop.hourly_orders_refresh	model.jaffle_shop.orders+	SUCCESS
