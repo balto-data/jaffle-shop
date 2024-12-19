@@ -4,3 +4,8 @@ models:
     config:
         materialized: trigger
         handler: metric_handler
+  - name: small_payment
+    description: Trigger for tracking small payments
+    config:
+        materialized: trigger
+        handler: metric_handler
