@@ -2,5 +2,8 @@ version: 2
 
 schedules:
     - name: daily_orders_refresh
-      schedule: 0 0 * * *
+      schedule: 30 0 * * *
+      selector: model.jaffle_shop.orders+
+    - name: hourly_orders_refresh
+      schedule: 0 * * * *
       selector: model.jaffle_shop.orders+

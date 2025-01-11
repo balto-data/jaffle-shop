@@ -10,6 +10,7 @@ seed-paths: ["seeds"]
 test-paths: ["tests"]
 analysis-paths: ["analysis"]
 macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
 
 target-path: "target"
 clean-targets:
@@ -22,7 +23,6 @@ models:
       materialized: table
       staging:
         materialized: view
-        +snowflake_warehouse: small
 seeds:
   +schema: public
 
