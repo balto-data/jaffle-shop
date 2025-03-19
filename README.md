@@ -1,6 +1,6 @@
 ## Example Balto project: `jaffle_shop`
 
-`jaffle_shop` is a fictional ecommerce store. This Balto project transforms raw data from an app database into a customers and orders model ready for analytics.
+`jaffle_shop` is a fictional ecommerce store. This Balto project transforms raw data from an app database into a customers and orders model ready for analytics
 
 ### What is this repo?
 What this repo _is_:
@@ -64,7 +64,6 @@ TRIGGERED_AT	TRIGGER_TYPE	TRIGGERED_BY	SELECTOR_STMT	STATUS
 2024-09-26 11:00:02.437	SCHEDULED_BUILD	schedules.jaffle_shop.hourly_orders_refresh	model.jaffle_shop.orders+	SUCCESS
 2024-09-26 10:56:42.372	DEPLOY	togo@baltodatatool.com	state:modified+	SUCCESS
 ```
-
 
 ### What is a jaffle?
 A jaffle is a toasted sandwich with crimped, sealed edges. Invented in Bondi in 1949, the humble jaffle is an Australian classic. The sealed edges allow jaffle-eaters to enjoy liquid fillings inside the sandwich, which reach temperatures close to the core of the earth during cooking. Often consumed at home after a night out, the most classic filling is tinned spaghetti, while my personal favourite is leftover beef stew with melted cheese.

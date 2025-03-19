@@ -57,5 +57,5 @@ final as (
 select * from final
 
 {% if is_incremental() %}
-  where order_date >= (select coalesce(max(order_date), '1900-01-01') from {{ this }})
+  where order_date > (select coalesce(max(order_date), '1900-01-01') from {{ this }})
 {% endif %}

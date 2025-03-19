@@ -1,0 +1,4 @@
+version: 2
+data_tests:
+  - name: assert_payment_amount_is_positive
+    description: Order amount should always be >= 0

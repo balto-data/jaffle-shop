@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: balto
+    database: balto_alpha  
+    schema: dbt  
+    tables:
+      - name: results
